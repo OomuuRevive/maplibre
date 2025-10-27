@@ -234,7 +234,7 @@ jobs:
           popd
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: maplibre-gl-native_${{ matrix.name }}_Qt${{ matrix.qt_version }}
           path: maplibre-gl-native_${{ matrix.name }}_Qt${{ matrix.qt_version }}.tar.bz2
